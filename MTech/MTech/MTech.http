@@ -1,0 +1,6 @@
+@MTech_HostAddress = http://localhost:5034
+
+GET {{MTech_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
