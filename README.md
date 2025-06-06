@@ -26,6 +26,7 @@ It allows you to store employees in a SQL Server database, validate RFC uniquene
     - Press F5 or click "Start Debugging"
     - Open `https://localhost:{port}/swagger` in your browser
 
+> **Note:** The database is automatically created using SQL Server LocalDB when the project is first run.
 ## Sample POST request to /api/employees
 
 ```json
@@ -36,32 +37,32 @@ It allows you to store employees in a SQL Server database, validate RFC uniquene
   "bornDate": "1980-01-01T00:00:00",
   "status": 1
 }
-
+```
 ## 📸 Screenshots
 
 ### Swagger UI  
-Visualiza y prueba los endpoints fácilmente desde el navegador.
+Browse and test all endpoints directly from your browser.
 
 ![Swagger](images/Swagger.png)
 
 ---
 
-### Crear un empleado (POST)  
-Ejemplo de envío de datos para agregar un empleado nuevo:
+### Creating an Employee (POST)  
+Example of sending data to add a new employee:
 
 ![POST Request](images/Post.png)
 
-**Respuesta de éxito:**
+**Success Response:**
 
 ![POST Response](images/Post-Res.png)
 
 ---
 
-### Consultar empleados (GET)  
-Filtrado por nombre y resultado general:
+### Retrieving Employees (GET)  
+Filtering by name and general results:
 
-**GET por nombre**
+**GET by name**
 ![GET-Res](images/Get-Res.png)
 
-**GET general**
+**GET all employees**
 ![GET-Res2](images/Get-Res2.png)
